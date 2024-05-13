@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import pawPrint from "../../images/paw_print_large2.svg";
 import "./styles.css";
 
 const Navbar = () => {
@@ -14,7 +13,6 @@ const Navbar = () => {
     <nav className={`navbar ${isOpen ? "open" : ""}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <img src={pawPrint} alt="paw print icon" className="navbar-logo" />
         </Link>
         <div className="menu-icon" onClick={toggleMenu}>
           {isOpen ? <FaTimes /> : <FaBars />}
@@ -28,27 +26,12 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link to="/about" className="nav-link" onClick={toggleMenu}>
-              About Rosie
+              About David
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/picks" className="nav-link" onClick={toggleMenu}>
-              Picks
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/tricks" className="nav-link" onClick={toggleMenu}>
-              Tricks
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/media" className="nav-link" onClick={toggleMenu}>
-              Media
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/why" className="nav-link" onClick={toggleMenu}>
-              Why?
+            <Link to="/contact" className="nav-link" onClick={toggleMenu}>
+              Contact
             </Link>
           </li>
         </ul>

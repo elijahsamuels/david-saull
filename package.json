@@ -1,8 +1,9 @@
 {
-  "name": "rosie",
-  "version": "0.1.0",
+  "name": "band-venues",
+  "version": "1.0.1",
+  "license": "UNLICENSED",
+  "author": "Elijah Samuels <elijahsamuels@gmail.com> (www.elijahsamuels.com)",
   "private": true,
-  "proxy": "http://localhost:3000/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/user-event": "^13.5.0",
